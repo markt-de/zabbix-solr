@@ -1,0 +1,1652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.4</version>
+    <date>2020-12-01T16:02:05Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template App Solr</template>
+            <name>Template App Solr</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Solr</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Solr - JVM - Buffers - Direct - MemoryUsed</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=buffers,name1=direct,name=MemoryUsed&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Buffers - Mapped - MemoryUsed</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=buffers,name1=mapped,name=MemoryUsed&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Classes - Loaded</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=classes,name=loaded&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Heap - committed</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=heap,name=committed&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Heap - max</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=heap,name=max&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Heap - usage</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=heap,name=usage&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <value_type>FLOAT</value_type>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Heap - used</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=heap,name=used&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Non-Heap - committed</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=non-heap,name=committed&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Non-Heap - max</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=non-heap,name=max&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <value_type>FLOAT</value_type>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Non-Heap - usage</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=non-heap,name=usage&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <value_type>FLOAT</value_type>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Non-Heap - used</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=non-heap,name=used&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Total - committed</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=total,name=committed&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Total - max</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=total,name=max&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Memory - Total - used</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=memory,name1=total,name=used&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - OS - openFileDescriptorCount</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=os,name=openFileDescriptorCount&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Threads - Deadlock - Count</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=threads,name1=deadlock,name=count&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - JVM - Threads - Count</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=jvm,name0=threads,name=count&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Cache - Field Cache - Entries</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CACHE,name=fieldCache&quot;,entries_count]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Cores - Loaded</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=cores,name=loaded&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Cores - Unloaded</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=cores,name=unloaded&quot;,Value]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Thread Pool - coreContainerWorkExecutor.idle - Count</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=threadPool,name=coreContainerWorkExecutor.idle&quot;,Count]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Thread Pool - coreContainerWorkExecutor.idle - Max</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=threadPool,name=coreContainerWorkExecutor.idle&quot;,Max]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Thread Pool - coreContainerWorkExecutor.idle - Mean</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=threadPool,name=coreContainerWorkExecutor.idle&quot;,Mean]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Thread Pool - coreContainerWorkExecutor.idle - Min</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=threadPool,name=coreContainerWorkExecutor.idle&quot;,Min]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Container - Thread Pool - coreContainerWorkExecutor.running - Count</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=threadPool,name=coreContainerWorkExecutor.running&quot;,Count]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Version</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=CONTAINER,scope=version,name=specification&quot;,Value]</key>
+                    <delay>600</delay>
+                    <history>7d</history>
+                    <trends>0</trends>
+                    <value_type>TEXT</value_type>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Update - updateShardHandler - threadPool.updateOnlyExecutor.completed</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=UPDATE,scope=updateShardHandler,name=threadPool.updateOnlyExecutor.completed&quot;,Count]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Update - updateShardHandler - threadPool.updateOnlyExecutor.completed (per second)</name>
+                    <type>CALCULATED</type>
+                    <key>jmx[&quot;solr:dom1=node,category=UPDATE,scope=updateShardHandler,name=threadPool.updateOnlyExecutor.completed&quot;,Count_PS]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <value_type>FLOAT</value_type>
+                    <params>last(&quot;jmx[\&quot;solr:dom1=node,category=UPDATE,scope=updateShardHandler,name=threadPool.updateOnlyExecutor.completed\&quot;,Count]&quot;)</params>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
+                </item>
+                <item>
+                    <name>Solr - Node - Update - updateShardHandler - threadPool.updateOnlyExecutor.submitted</name>
+                    <type>JMX</type>
+                    <key>jmx[&quot;solr:dom1=node,category=UPDATE,scope=updateShardHandler,name=threadPool.updateOnlyExecutor.submitted&quot;,Count]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                </item>
+                <item>
+                    <name>Solr - Node - Update - updateShardHandler - threadPool.updateOnlyExecutor.submitted (per second)</name>
+                    <type>CALCULATED</type>
+                    <key>jmx[&quot;solr:dom1=node,category=UPDATE,scope=updateShardHandler,name=threadPool.updateOnlyExecutor.submitted&quot;,Count_PS]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <value_type>FLOAT</value_type>
+                    <params>last(&quot;jmx[\&quot;solr:dom1=node,category=UPDATE,scope=updateShardHandler,name=threadPool.updateOnlyExecutor.submitted\&quot;,Count]&quot;)</params>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
+                </item>
+                <item>
+                    <name>Solr - Java - No. of processes</name>
+                    <key>proc.num[java,,,start.jar]</key>
+                    <delay>60</delay>
+                    <history>7d</history>
+                    <applications>
+                        <application>
+                            <name>Solr</name>
+                        </application>
+                    </applications>
+                    <request_method>POST</request_method>
+                    <triggers>
+                        <trigger>
+                            <expression>{max(2m)}=0</expression>
+                            <name>Solr is not running on {HOST.NAME}</name>
+                            <priority>WARNING</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>Solr is not running on {HOST.NAME}</name>
+                                    <expression>{Template App Solr:proc.num[java,,,start.jar].max({$ESCALATION_1_DELAY})}=0</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger>
+                        <trigger>
+                            <expression>{max({$ESCALATION_1_DELAY})}=0</expression>
+                            <name>Solr is not running on {HOST.NAME}</name>
+                            <priority>HIGH</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>Solr is not running on {HOST.NAME}</name>
+                                    <expression>{Template App Solr:proc.num[java,,,start.jar].max({$ESCALATION_2_DELAY})}=0</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger>
+                        <trigger>
+                            <expression>{max({$ESCALATION_2_DELAY})}=0</expression>
+                            <name>Solr is not running on {HOST.NAME}</name>
+                            <priority>DISASTER</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>Solr Core Discovery</name>
+                    <type>JMX</type>
+                    <key>jmx.discovery[beans,&quot;solr:dom1=core,*,category=CORE,name=coreName&quot;]</key>
+                    <delay>600s</delay>
+                    <lifetime>1d</lifetime>
+                    <description>This rule should discover all Solr cores.&#13;
+&#13;
+A trick is being used to only get the core names: First it tries to find all beans that match &quot;coreName&quot;. Then a preprocessing javascript strips everything but the core name from JMXOBJ and overwrites the original value. As a result JMXOBJ only contains the entry point for this core and is used to build consecutive item prototypes.</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - Core - Entries</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=core,name=fieldCache&quot;,entries_count]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - hitratio (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,cumulative_hitratio]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - hits (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,cumulative_hits]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - inserts (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,cumulative_inserts]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - lookups (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,cumulative_lookups]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - evictions (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,evictions]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - hits (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,hits]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - inserts (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,inserts]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - lookups (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,lookups]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - hitratio (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,cumulative_hitratio]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - hits (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,cumulative_hits]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - inserts (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,cumulative_inserts]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - lookups (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,cumulative_lookups]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - evictions (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,evictions]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - hits (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,hits]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - inserts (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,inserts]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - lookups (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,lookups]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - hitratio (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,cumulative_hitratio]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - hits (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,cumulative_hits]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - inserts (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,cumulative_inserts]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - lookups (cumulative)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,cumulative_lookups]</key>
+                            <delay>5m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - evictions (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,evictions]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - hits (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,hits]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - inserts (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,inserts]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - lookups (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,lookups]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Index - Size</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=INDEX,name=sizeInBytes&quot;,Value]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <units>b</units>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - clientErrors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=clientErrors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - clientErrors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=clientErrors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - errors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=errors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - errors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=errors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - requests (per second)</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=requests&quot;,Count]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - requestTimes - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=requestTimes&quot;,Count]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - requestTimes - Max</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=requestTimes&quot;,Max]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - requestTimes - Mean</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=requestTimes&quot;,Mean]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - requestTimes - Min</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=requestTimes&quot;,Min]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - requestTimes - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=requestTimes&quot;,OneMinuteRate]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - serverErrors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=serverErrors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - serverErrors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=serverErrors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - timeouts - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=timeouts&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - /get - timeouts - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=/get,name=timeouts&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - clientErrors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=clientErrors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - clientErrors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=clientErrors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - errors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=errors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - errors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=errors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - serverErrors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=serverErrors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - serverErrors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=serverErrors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - timeouts - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=timeouts&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Query - search - timeouts - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=QUERY,scope=search,name=timeouts&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - errors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=errors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - errors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=errors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - generation</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=generation&quot;,Value]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - indexSize</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=indexSize&quot;,Value]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <units>b</units>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>JAVASCRIPT</type>
+                                    <params>// Store the multipliers that each unit of measurement needs in order
+// to calculate the byte count.
+var multipliers = {}
+multipliers.B = 1;
+multipliers.KB = ( multipliers.B * 1024 );
+multipliers.MB = ( multipliers.KB * 1024 );
+multipliers.GB = ( multipliers.MB * 1024 );
+multipliers.TB = ( multipliers.GB * 1024 );
+multipliers.PB = ( multipliers.TB * 1024 );
+multipliers.EB = ( multipliers.PB * 1024 );
+multipliers.ZB = ( multipliers.EB * 1024 );
+
+// Parse the unit of measurement.
+var matches = value.toUpperCase().match( /([KMGTPEZ]I?)?B$/ );
+
+// Strip out any optional &quot;i&quot; from the unit of measurement.
+var unit = matches[ 0 ].replace( /i/i, &quot;&quot; );
+
+// Parse the number.
+var number = parseFloat( value );
+
+// Convert to bytes.
+return( Math.floor(number * multipliers[ unit ] ) );</params>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - isMaster</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=isMaster&quot;,Value]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(.*)
+\1:false=0:true=1</params>
+                                </step>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(false|true)(?=.*:\1=(\d))
+\2</params>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - isSlave</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=isSlave&quot;,Value]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(.*)
+\1:false=0:true=1</params>
+                                </step>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(false|true)(?=.*:\1=(\d))
+\2</params>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - replicationEnabled</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=replicationEnabled&quot;,Value]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(.*)
+\1:false=0:true=1</params>
+                                </step>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(false|true)(?=.*:\1=(\d))
+\2</params>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Replication - /replication - requests - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=REPLICATION,scope=/replication,name=requests&quot;,Count]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Searcher - caching</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=SEARCHER,scope=searcher,name=caching&quot;,Value]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(.*)
+\1:false=0:true=1</params>
+                                </step>
+                                <step>
+                                    <type>REGEX</type>
+                                    <params>(false|true)(?=.*:\1=(\d))
+\2</params>
+                                </step>
+                            </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Searcher - indexVersion</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=SEARCHER,scope=searcher,name=indexVersion&quot;,Value]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Searcher - maxDoc</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=SEARCHER,scope=searcher,name=maxDoc&quot;,Value]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Searcher - numDocs</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=SEARCHER,scope=searcher,name=numDocs&quot;,Value]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Searcher - warmupTime</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=SEARCHER,scope=searcher,name=warmupTime&quot;,Value]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - errors - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=errors&quot;,Count]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - errors - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=errors&quot;,OneMinuteRate]</key>
+                            <delay>2m</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requests - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requests&quot;,Count]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requests (per second)</name>
+                            <type>CALCULATED</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requests&quot;,Count_PS]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <params>last(&quot;jmx[\&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requests\&quot;,Count]&quot;)</params>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <preprocessing>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <params/>
+                                </step>
+                            </preprocessing>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requestTimes - Count</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requestTimes&quot;,Count]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requestTimes - Max</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requestTimes&quot;,Max]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requestTimes - Mean</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requestTimes&quot;,Mean]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requestTimes - Min</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requestTimes&quot;,Min]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Update - /update - requestTimes - OneMinuteRate</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=UPDATE,scope=/update,name=requestTimes&quot;,OneMinuteRate]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <value_type>FLOAT</value_type>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                    </item_prototypes>
+                    <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                    <preprocessing>
+                        <step>
+                            <type>JAVASCRIPT</type>
+                            <params>// Get the discovered data from Zabbix.
+disco_data = JSON.parse(value);
+
+// Strip legacy &quot;data&quot; element if it was found.
+if (disco_data.data) {
+  disco_data = disco_data.data;
+}
+
+// Iterate over all discovered objects.
+for (var lvl1 in disco_data) {
+
+  // Safekeeping
+  if (disco_data.hasOwnProperty(lvl1)) {
+
+    // Iterate over all object attributes.
+    for (var lvl2 in disco_data[lvl1]) {
+
+      // Safekeeping
+      if (disco_data[lvl1].hasOwnProperty(lvl2)) {
+
+        // Check if we found the required attribute.
+        if (lvl2 == '{#JMXOBJ}') {
+
+          var objdata = disco_data[lvl1][lvl2];
+          // Cut the string to only contain the name of the Solr core.
+          var regex = /(.*),category=CORE,name=coreName/;
+          var val2 = '';
+
+          if (objdata.match(regex)) {
+            val2 = objdata.replace(regex, &quot;$1&quot;);
+            // Overwrite the original value with the regex match.
+            disco_data[lvl1][lvl2] = val2;
+          } else {
+            val2 = disco_data[lvl1][lvl2];
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+// Return the (modified) discovered data to Zabbix.
+return (JSON.stringify(disco_data));</params>
+                        </step>
+                    </preprocessing>
+                </discovery_rule>
+            </discovery_rules>
+            <macros>
+                <macro>
+                    <macro>{$SOLR.HEAPMEM.MAX.PERCENTAGE}</macro>
+                    <value>85</value>
+                </macro>
+            </macros>
+        </template>
+    </templates>
+</zabbix_export>
