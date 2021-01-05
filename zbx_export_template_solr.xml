@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.4</version>
-    <date>2020-12-01T16:02:05Z</date>
+    <date>2021-01-05T12:21:48Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -637,6 +637,32 @@ A trick is being used to only get the core names: First it tries to find all bea
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
                         </item_prototype>
                         <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - size</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,size]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:documentCache - warmupTime</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=documentCache&quot;,warmupTime]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
                             <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - hitratio (cumulative)</name>
                             <type>JMX</type>
                             <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,cumulative_hitratio]</key>
@@ -766,6 +792,32 @@ A trick is being used to only get the core names: First it tries to find all bea
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
                         </item_prototype>
                         <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - size</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,size]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:filterCache - warmupTime</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=filterCache&quot;,warmupTime]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
                             <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - hitratio (cumulative)</name>
                             <type>JMX</type>
                             <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,cumulative_hitratio]</key>
@@ -892,6 +944,32 @@ A trick is being used to only get the core names: First it tries to find all bea
                                     <params/>
                                 </step>
                             </preprocessing>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - size</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,size]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
+                            <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Core - {#JMXDOM2} - Cache - searcher:queryResultCache - warmupTime</name>
+                            <type>JMX</type>
+                            <key>jmx[&quot;{#JMXOBJ},category=CACHE,scope=searcher,name=queryResultCache&quot;,warmupTime]</key>
+                            <delay>60s</delay>
+                            <history>7d</history>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>Solr Core {#JMXDOM2}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
                         </item_prototype>
                         <item_prototype>
