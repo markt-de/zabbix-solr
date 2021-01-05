@@ -12,4 +12,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 Initial release.
 
 [Unreleased]: https://github.com/markt-de/zabbix-solr/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/markt-de/zabbix-solr/compare/v1.0.0...v1.1.0
+[v1.1.0]: https://github.com/markt-de/zabbix-solr/compare/v1.0.0...v1.1.0
